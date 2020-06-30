@@ -57,20 +57,16 @@ document.querySelector('.top-content div:nth-child(2) p').textContent = siteCont
 
 
 
+document.querySelector(".bottom-content div:nth-child(1) h4").textContent = siteContent['main-content']['services-h4']
+document.querySelector('.bottom-content div:nth-child(1) p').textContent =siteContent['main-content']['services-content']
+
+
+
 
 
 
 /*let main = document.querySelector('.text-content');
-main.innerHTML = `<h4>Features</h4>
-<p>Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-    in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-    scelerisque quis.</p>`;
 
-let sub = document.querySelector("body > div > section.main-content > div.top-content > div:nth-child(2)");
-sub.innerHTML = `<h4>About</h4>
-<p>About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-    interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-    scelerisque quis.</p>`;
 
 
 
@@ -85,11 +81,7 @@ navi.innerHTML = `
                 <a href="#">Contact</a>
 `
 
-let bottomtxt = document.querySelector("body > div > section.main-content > div.bottom-content > div:nth-child(1)");
-bottomtxt.innerHTML = `<h4>Services</h4>
-                    <p>Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-                        in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-                        scelerisque quis.</p>`;
+
 
 let midtxt = document.querySelector("body > div > section.main-content > div.bottom-content > div:nth-child(2)");
 midtxt.innerHTML = `<h4>Product</h4>
