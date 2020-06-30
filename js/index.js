@@ -38,19 +38,29 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let title = document.querySelector('h1');
-title.innerHTML = `DOM <br> Is <br> Awesome`; //Is there an alternate? 
+document.getElementById('cta-img').setAttribute('src', siteContent['cta']['img-src']);
+document.getElementById('middle-img').setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-let button = document.querySelector('button');
-button.textContent = "Get Started"
+document.querySelector("h1").textContent = siteContent['cta']['h1'];
+document.querySelector('button').textContent = siteContent['cta']['button'];
+document.querySelector("footer p").textContent = siteContent['footer']['copyright'];
 
-let banner = document.getElementById('cta-img');
-banner.src = "img/header-img.png";
+document.querySelector('.text-content h4').textContent = siteContent['main-content']['features-h4'];
+document.querySelector('.text-content p').textContent = siteContent['main-content']['features-content'];
+document.querySelector('.top-content div:nth-child(2) h4').textContent = siteContent['main-content']['about-h4'];
+document.querySelector('.top-content div:nth-child(2) p').textContent = siteContent['main-content']['about-content'];
 
-let main = document.querySelector('.text-content');
+
+
+
+
+
+/*let main = document.querySelector('.text-content');
 main.innerHTML = `<h4>Features</h4>
 <p>Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
     in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
@@ -62,8 +72,18 @@ sub.innerHTML = `<h4>About</h4>
     interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
     scelerisque quis.</p>`;
 
-let middleimg = document.getElementById('middle-img');
-middleimg.src = "img/mid-page-accent.jpg";
+
+
+
+let navi = document.querySelector('.container > header > nav');
+navi.innerHTML = `
+<a href="#">Services</a>
+                <a href="#">Product</a>
+                <a href="#">Vision</a>
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+`
 
 let bottomtxt = document.querySelector("body > div > section.main-content > div.bottom-content > div:nth-child(1)");
 bottomtxt.innerHTML = `<h4>Services</h4>
@@ -90,8 +110,7 @@ contact.innerHTML = `<h4>Contact</h4>
   <p>1 (888) 888-8888</p>
   <p>sales@greatidea.io</p>`;
 
-  let copyright = document.querySelector("body > div > footer > p")
-  copyright.textContent = "Copyright Great Idea! 2018"
+ */
 
 
 

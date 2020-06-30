@@ -13,23 +13,30 @@
 */
 
 var sec = 0;
+
+
+
 function pad ( val ) { return val > 9 ? val : "0" + val; }
 
 
-    function timer(){
-            setInterval( function(){
-                document.getElementById("msTens").innerHTML= ++sec%10;
-                document.getElementById("msHundreds").innerHTML= +(pad(parseInt(sec/10))%10);
-                document.getElementById('secondOnes').innerHTML= +(pad(parseInt(sec/100))%10);
-                document.getElementById('secondTens').innerHTML = +(pad(parseInt(sec/1000))%10);
-                if(document.getElementById('secondTens').innerHTML == 1){
-                    document.querySelector('.digits').style.color = 'red';
-                    stopCount();
-                    ;
-                }
-                
-            }, 10)
+
+
+function timer(){
+    setInterval( 
+        function(){
+        document.getElementById("msTens").innerHTML= ++sec%10;
+        document.getElementById("msHundreds").innerHTML= +(pad(parseInt(sec/10))%10);
+        document.getElementById('secondOnes').innerHTML= +(pad(parseInt(sec/100))%10);
+        document.getElementById('secondTens').innerHTML = +(pad(parseInt(sec/1000))%10);
+            if(document.getElementById('secondTens').innerHTML == 1)
+            {
+                document.querySelector('.digits').style.color = 'red';
             }
+        }, 10)
+    }
+
+
+
             
 
 
