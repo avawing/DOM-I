@@ -17,7 +17,9 @@ var sec = 0;
 
 
 function pad ( val ) { return val > 9 ? val : "0" + val; }
-const timerCheck = 0;
+
+
+
 
 
 
@@ -39,10 +41,7 @@ function timer(){
     }
 
 
-
-timer()
-            
-
+    timer()
 
                        
         
