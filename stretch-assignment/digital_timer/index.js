@@ -22,9 +22,9 @@ const timerCheck = 0;
 
 
 
-function checkTimer(){
-    if(timerCheck = 1){
-    setInterval( 
+function timer(){
+
+        let interval = setInterval( 
         function(){
         document.getElementById("msTens").innerHTML= ++sec%10;
         document.getElementById("msHundreds").innerHTML= +(pad(parseInt(sec/10))%10);
@@ -33,13 +33,14 @@ function checkTimer(){
             if(document.getElementById('secondTens').innerHTML == 1)
             {
                 document.querySelector('.digits').style.color = 'red';
+                clearInterval(interval)
             }
         }, 10)
     }
-}
 
-document.getElementById('button').onclick = timerCheck(num)
 
+
+timer()
             
 
 
