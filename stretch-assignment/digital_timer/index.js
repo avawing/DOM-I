@@ -17,11 +17,13 @@ var sec = 0;
 
 
 function pad ( val ) { return val > 9 ? val : "0" + val; }
+const timerCheck = 0;
 
 
 
 
-function timer(){
+function checkTimer(){
+    if(timerCheck = 1){
     setInterval( 
         function(){
         document.getElementById("msTens").innerHTML= ++sec%10;
@@ -34,8 +36,9 @@ function timer(){
             }
         }, 10)
     }
+}
 
-
+document.getElementById('button').onclick = timerCheck(num)
 
             
 

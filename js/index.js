@@ -57,52 +57,28 @@ document.querySelector('.top-content div:nth-child(2) p').textContent = siteCont
 
 
 
-document.querySelector(".bottom-content div:nth-child(1) h4").textContent = siteContent['main-content']['services-h4']
-document.querySelector('.bottom-content div:nth-child(1) p').textContent =siteContent['main-content']['services-content']
+document.querySelector(".bottom-content div:nth-child(1) h4").textContent = siteContent['main-content']['services-h4'];
+document.querySelector('.bottom-content div:nth-child(1) p').textContent =siteContent['main-content']['services-content'];
+
+document.querySelector("nav  a:nth-child(1)").textContent = siteContent['nav']['nav-item-1']
+document.querySelector("nav  a:nth-child(2)").textContent = siteContent['nav']['nav-item-2']
+document.querySelector("nav  a:nth-child(3)").textContent = siteContent['nav']['nav-item-3']
+document.querySelector("nav  a:nth-child(4)").textContent = siteContent['nav']['nav-item-4']
+document.querySelector("nav  a:nth-child(5)").textContent = siteContent['nav']['nav-item-5']
+document.querySelector("nav  a:nth-child(6)").textContent = siteContent['nav']['nav-item-6']
 
 
+document.querySelector(".bottom-content div:nth-child(2) h4").textContent = siteContent['main-content']['product-h4'];
+document.querySelector('.bottom-content div:nth-child(2) p').textContent = siteContent['main-content']['product-content'];
 
+document.querySelector(".bottom-content div:nth-child(3) h4").textContent = siteContent['main-content']['vision-h4'];
+document.querySelector('.bottom-content div:nth-child(3) p').textContent = siteContent['main-content']['vision-content'];
 
+document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4']
+document.querySelector(".contact  p:nth-child(2)").textContent= siteContent['contact']['address']
+document.querySelector(".contact  p:nth-child(2)").textContent= siteContent['contact']['phone']
+document.querySelector(".contact  p:nth-child(2)").textContent= siteContent['contact']['email']
 
-
-/*let main = document.querySelector('.text-content');
-
-
-
-
-
-let navi = document.querySelector('.container > header > nav');
-navi.innerHTML = `
-<a href="#">Services</a>
-                <a href="#">Product</a>
-                <a href="#">Vision</a>
-                <a href="#">Features</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-`
-
-
-
-let midtxt = document.querySelector("body > div > section.main-content > div.bottom-content > div:nth-child(2)");
-midtxt.innerHTML = `<h4>Product</h4>
-<p>Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-    interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-    scelerisque quis.</p>`;
-
-let bottext = document.querySelector("body > div > section.main-content > div.bottom-content > div:nth-child(3)");
-bottext.innerHTML = `<h4>Vision</h4>
-<p>Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in
-    interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-    scelerisque quis.</p>`
-
-let contact = document.querySelector('.contact');
-contact.innerHTML = `<h4>Contact</h4>
-  <p>123 Way 456 Street<br>
-  Somewhere, USA</p>
-  <p>1 (888) 888-8888</p>
-  <p>sales@greatidea.io</p>`;
-
- */
 
 
 
