@@ -39,9 +39,5 @@ function timer(){
             }
         }, 10)
     }
-
-
-    timer()
-
                        
         
