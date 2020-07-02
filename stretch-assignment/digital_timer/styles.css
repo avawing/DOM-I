@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Special+Elite&display=swap');
+
 body {
   display: flex;
   flex-direction: column;
@@ -8,17 +10,25 @@ body {
 .digit {
   display: inline-block;
   font-size: 80px;
-}
-
-.redDigit {
-  color: red;
+  font-family: 'Special Elite', cursive;;
 }
 
 button {
-background-color: red;
+
 font-size: 4rem;
 color: white;
 width: 500px;
 height: 500px;
 border-radius: 50%;
+font-family: 'Oswald', sans-serif;
+}
+.button{
+  display: inline;
+}
+#start{
+  background-color: red;
+}
+
+#reset{
+  background-color: blue;
 }
