@@ -6,7 +6,7 @@ function reset(){
     document.getElementById('secondOnes').textContent= 0;
     document.getElementById('secondTens').textContent = 0;
     document.querySelector('.digits').style.color = 'black';
-    clearInterval(sec)
+    sec = 0;
 }
 
 
@@ -28,3 +28,4 @@ function timer(){
         }, 10)
     }
               
+
