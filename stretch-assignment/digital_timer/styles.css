@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Special+Elite&display=swap');
 
-.clock {
+body {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .digit {

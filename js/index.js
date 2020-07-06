@@ -44,7 +44,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 document.getElementById('cta-img').setAttribute('src', siteContent['cta']['img-src']);
 document.getElementById('middle-img').setAttribute('src', siteContent['main-content']['middle-img-src']);
 
-document.querySelector("h1").innerHTML = 'Dom<br /> is <br /> awesome';
+document.querySelector("h1").textContent = siteContent['cta']['h1'];
 document.querySelector('button').textContent = siteContent['cta']['button'];
 document.querySelector("footer p").textContent = siteContent['footer']['copyright'];
 
