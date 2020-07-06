@@ -40,6 +40,5 @@ function timer(){
                 clearInterval(interval)
             }
         }, 10)
-    }
-                       
+    }       
         

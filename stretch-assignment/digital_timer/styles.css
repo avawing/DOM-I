@@ -10,25 +10,17 @@
 .digit {
   display: inline-block;
   font-size: 80px;
-  font-family: 'Special Elite', cursive;;
+}
+
+.redDigit {
+  color: red;
 }
 
 button {
-
+background-color: red;
 font-size: 4rem;
 color: white;
 width: 500px;
 height: 500px;
 border-radius: 50%;
-font-family: 'Oswald', sans-serif;
-}
-.button{
-  display: inline;
-}
-#start{
-  background-color: red;
-}
-
-#reset{
-  background-color: blue;
 }
